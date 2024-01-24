@@ -4,4 +4,5 @@ namespace: flux-system
 
 resources:
   - infrastructure/ingress-nginx.yaml
+  - infrastructure/kyverno.yaml
   - infrastructure/weave-gitops.yaml
