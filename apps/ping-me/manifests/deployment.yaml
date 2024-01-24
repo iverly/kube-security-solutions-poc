@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ping-me
+  labels:
+    app: ping-me
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ping-me
+  template:
+    metadata:
+      labels:
+        app: ping-me
+    spec:
+      containers:
+        - name: app
+          image: leofvo/demo-k8s-pentesting:1.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
