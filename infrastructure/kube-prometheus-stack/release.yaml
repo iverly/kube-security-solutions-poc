@@ -14,6 +14,11 @@ spec:
         name: kube-prometheus-stack
       interval: 12h
   values:
+    prometheus:
+      prometheusSpec:
+        serviceMonitorSelectorNilUsesHelmValues: false
+        serviceMonitorSelector: {}
+        serviceMonitorNamespaceSelector: {}
     grafana:
       ingress:
         enabled: true
