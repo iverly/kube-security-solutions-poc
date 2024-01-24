@@ -7,4 +7,5 @@ resources:
   - infrastructure/ingress-nginx.yaml
   - infrastructure/kube-prometheus-stack.yaml
   - infrastructure/kyverno.yaml
+  - infrastructure/policy-reporter.yaml
   - infrastructure/weave-gitops.yaml
