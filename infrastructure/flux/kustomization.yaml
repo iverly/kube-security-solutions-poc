@@ -5,5 +5,6 @@ namespace: flux-system
 resources:
   - apps/ping-me.yaml
   - infrastructure/ingress-nginx.yaml
+  - infrastructure/kube-prometheus-stack.yaml
   - infrastructure/kyverno.yaml
   - infrastructure/weave-gitops.yaml
