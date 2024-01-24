@@ -6,6 +6,7 @@ resources:
   - apps/ping-me.yaml
   - infrastructure/ingress-nginx.yaml
   - infrastructure/kube-prometheus-stack.yaml
+  - infrastructure/kyverno-policies.yaml
   - infrastructure/kyverno.yaml
   - infrastructure/policy-reporter.yaml
   - infrastructure/weave-gitops.yaml
