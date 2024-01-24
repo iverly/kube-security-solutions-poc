@@ -1,0 +1,18 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: kyverno-policies
+spec:
+  interval: 30m
+  chart:
+    spec:
+      chart: kyverno-policies
+      version: "*"
+      sourceRef:
+        kind: HelmRepository
+        name: kyverno-policies
+      interval: 12h
+  values:
+    podSecurityStandard: baseline
+    failurePolicy: Ignore
