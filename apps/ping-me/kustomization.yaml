@@ -6,4 +6,5 @@ resources:
   - manifests/deployment.yaml
   - manifests/ingress.yaml
   - manifests/namespace.yaml
+  - manifests/network-policies.yaml
   - manifests/service.yaml
